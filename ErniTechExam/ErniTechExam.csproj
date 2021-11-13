@@ -29,6 +29,7 @@
     <None Remove="Refit" />
     <None Remove="Refit.Newtonsoft.Json" />
     <None Remove="Services\API\" />
+    <None Remove="Converters\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -37,5 +38,6 @@
     <Folder Include="Models\" />
     <Folder Include="Services\Interaces\" />
     <Folder Include="Services\API\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
 </Project>
