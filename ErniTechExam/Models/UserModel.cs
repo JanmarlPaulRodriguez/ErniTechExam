@@ -6,7 +6,7 @@ namespace ErniTechExam.Models
     public class UserModel
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
