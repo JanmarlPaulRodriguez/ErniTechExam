@@ -30,6 +30,11 @@
     <None Remove="Refit.Newtonsoft.Json" />
     <None Remove="Services\API\" />
     <None Remove="Converters\" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Fonts\" />
+    <None Remove="Resources\Fonts\FontAwesome6Solid.otf" />
+    <None Remove="Resources\Fonts\FontAwesome6Regular.otf" />
+    <None Remove="Constants\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -39,5 +44,12 @@
     <Folder Include="Services\Interaces\" />
     <Folder Include="Services\API\" />
     <Folder Include="Converters\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Constants\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome6Solid.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome6Regular.otf" />
   </ItemGroup>
 </Project>

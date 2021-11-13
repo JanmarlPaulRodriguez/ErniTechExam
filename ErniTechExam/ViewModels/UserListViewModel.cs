@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using ErniTechExam.Models;
 using ErniTechExam.Services.Interfaces;
+using ErniTechExam.Views;
 using Prism.Commands;
 using Prism.Navigation;
 using Prism.Services;
@@ -76,8 +77,9 @@ namespace ErniTechExam.ViewModels
 
         private async void OnItemSelectedCommand(UserModel user)
         {
-            // TODO create new page to display info
-            //_navigationService.NavigateAsync()
+            var navParams = new NavigationParameters();
+            navParams.Add(nameof(UserModel), user);
+            await _navigationService.NavigateAsync(nameof(UserDetailsPage), navParams);
         }
 
         private async void OnRefreshCommand()

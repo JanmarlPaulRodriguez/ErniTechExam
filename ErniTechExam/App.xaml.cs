@@ -9,7 +9,6 @@ using Prism.Unity;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ErniTechExam
 {
     public partial class App : PrismApplication
@@ -40,6 +39,7 @@ namespace ErniTechExam
             containerRegistry.RegisterSingleton<IUserService, UserService>();
 
             containerRegistry.RegisterForNavigation<UserListPage, UserListViewModel>();
+            containerRegistry.RegisterForNavigation<UserDetailsPage, UserDetailsViewModel>();
         }
     }
 }
